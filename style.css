@@ -1,37 +1,46 @@
+@font-face {
+    font-family: 'YoonChildfundkoreaManSeh';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaManSeh.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'YoonChildfundkoreaManSeh';
+    line-height: 2;
+}
+
 body {
-    background-color: #c9d7dd;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-#direction {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-#info,
-#content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2vw 5vw;
-    margin: 1vw;
-    border-radius: 20px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    background-color: #e9eff1;
 }
 
 #info {
-    flex-direction: column;
-    background-color: #efefef;
+    padding: 1vw 4vw;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-#content {
-    width: 15vw;
-    height: 20vh;
-    background-color: #fff;
+#info img {
+    width: 10vw;
+    height: 10vw;
+}
+
+#icon-container {
+    width: 30vw;
+    margin: 3vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 5vw;
+    height: 5vw;
+    margin: 0 4vw;
+    cursor: pointer;
 }
