@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>진이의 시계</title>
+        <link rel="stylesheet" href="./style.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <section class="battery">
+                <span class="ui-title">배터리</span>
+                <div class="content-box">100%</div>
+                <div class="charge" onclick="chargeBattery()">충전하기</div>
+            </section>
+            <section class="time">
+                <span class="ui-title">시간</span>
+                <div class="content-box">로딩 중...</div>
+            </section>
+        </header>
+        <section class="alarm-container">
+            <span class="ui-title">알람 현황</span>
+            <div class="alarm-list" id="alarmList"></div>
+            <form class="alarm-add">
+                <span class="ui-title">알람 추가하기</span>
+                <input class="content-box add" placeholder="00" />시
+                <input class="content-box add" placeholder="00" />분
+                <input class="content-box add" placeholder="00" />초
+                <img class="add-btn" src="../asset/img/plus.png" alt="+" onclick="addAlarm()" />
+            </form>
+        </section>
+        <script src="./main.js"></script>
+    </body>
+</html>
