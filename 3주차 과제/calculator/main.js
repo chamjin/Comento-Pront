@@ -52,7 +52,7 @@ function getArr(string) {
 }
 
 function startOperation0(equation) {
-    if (equation.indexOf('*') !== -1 || equation.indexOf('/') !== -1 || equation.indexOf('%') !== -1) {
+    if (equation.indexOf('*') !== -1 || equation.indexOf('/') !== -1) {
         operation1(equation);
     } else if (equation.indexOf('+') !== -1 || equation.indexOf('-') !== -1) {
         operation2(equation);
@@ -71,18 +71,15 @@ function getResult(v, num1, num2) {
             return (+num1 + +num2).toFixed(2);
         case '-':
             return (+num1 - +num2).toFixed(2);
-        case '%':
-            return ((+num1 * +num2) / 100).toFixed(2); // 퍼센트 계산 추가
     }
 }
 
 function operation1(equation) {
-    while (equation.indexOf('*') !== -1 || equation.indexOf('/') !== -1 || equation.indexOf('%') !== -1) {
+    while (equation.indexOf('*') !== -1 || equation.indexOf('/') !== -1) {
         for (let i = 0; i < equation.length; i++) {
             switch (equation[i]) {
                 case '*':
                 case '/':
-                case '%':
                     equation.splice(i - 1, 3, getResult(equation[i], equation[i - 1], equation[i + 1]));
                     continue;
             }
