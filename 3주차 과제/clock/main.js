@@ -1,6 +1,6 @@
 function updateTime() {
-    const now = new Date();
-    const year = now.getFullYear();
+    const now = new Date(); //현재 date 객체 반환
+    const year = now.getFullYear(); //현재 년도 반환
     const month = String(now.getMonth() + 1).padStart(2, '0');
     const date = String(now.getDate()).padStart(2, '0');
     const hours = String(now.getHours()).padStart(2, '0');

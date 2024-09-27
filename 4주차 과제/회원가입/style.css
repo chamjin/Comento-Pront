@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix)
+            format('embedded-opentype'),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format('woff'),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format('truetype');
+}
+
+* {
+    font-family: 'MaruBuri';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3vw;
+}
+
+.sign-up {
+    margin: 2vw 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50vw;
+    height: 10vh;
+    background-color: #0001;
+    margin: 1vw;
+    border-radius: 40px;
+}
+
+.ui-title {
+    font-size: 2vw;
+}
+
+input {
+    width: 20vw;
+    height: 5vh;
+    margin: 1vw 2vw;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 2vw;
+    font-size: 2.5vw;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    color: red;
+}
+
+span {
+    font-size: 12px;
+    margin: -4px;
+}

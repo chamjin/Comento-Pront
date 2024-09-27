@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>회원가입</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="sign-up">회원가입</div>
+        <form>
+            <div class="row">
+                <div class="ui-title">　아이디</div>
+                <input id="inputId" name="id" type="text" required />
+            </div>
+            <div class="row">
+                <div class="ui-title">비밀번호</div>
+                <input
+                    id="inputPw"
+                    name="password"
+                    type="password"
+                    required
+                    pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}"
+                    title="비밀번호는 8자 이상의 영문, 숫자, 특수문자를 포함해야 합니다."
+                />
+            </div>
+            <div class="row">
+                <div class="ui-title">　　이름</div>
+                <input id="inputName" name="name" type="text" required />
+            </div>
+            <div class="row">
+                <div class="ui-title">　이메일</div>
+                <input id="inputEmail" name="email" type="email" required />
+            </div>
+            <button type="submit">가입하기</button>
+        </form>
+        <script src="./main.js"></script>
+    </body>
+</html>
