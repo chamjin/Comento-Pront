@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'SF_HambakSnow';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#content {
+    width: 50vw;
+    height: 10vh;
+    padding: 1vw;
+    border: 4px solid #0003;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.to-do-list {
+    width: 50vw;
+    height: 50vh;
+    margin-top: 1.5vw;
+    border-radius: 10px;
+    background-color: #0003;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw 0;
+}
+
+.to-do {
+    color: #0009;
+    margin-left: 0.5vw;
+}
+
+.to-do-done {
+    color: #0002;
+    margin-left: 0.5vw;
+    text-decoration: line-through;
+}
